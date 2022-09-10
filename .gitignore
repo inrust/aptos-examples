@@ -1,0 +1,10 @@
+# Move
+**/build
+
+# Node
+**/node_modules
+**/yarn.lock
+
+# Mac
+.DS_Store
+.idea
