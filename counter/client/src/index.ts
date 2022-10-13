@@ -3,9 +3,9 @@ import { AptosClient, AptosAccount, AptosAccountObject } from "aptos";
 const NODE_URL = process.env.APTOS_NODE_URL || "https://fullnode.devnet.aptoslabs.com";
 
 const accountObject: AptosAccountObject = {
-    address: "0x9f53ba21527d32dd88e533946b085f9ab813d8ed40c13bbe2c667ea3a7e2b60f",
-    privateKeyHex: "0x29f4c504c2b36cdf7b7de6671689616ec9309ccdeddef37a4f90b87b16de936a",
-    publicKeyHex: "0xf18043587ad20acd5df1f8d16595d09079dd04e58df5a0943f60eaabb28f39ad",
+    address: "0x2780fe38b9e3a5a92cb56190aab75d4fa63a01d24c777810e2e4fb0a320deb9d",
+    privateKeyHex: "0xaa1507a6e87e39d558b1f3fb9359585e6aa9cadcbe8a2cb71dfa91f6809880ff",
+    publicKeyHex: "0xf515928a64f2f9149597c55c4557f1f3c56a36560811bd515375bb8713ebcc92",
 };
 const counterStore = `${accountObject.address}::counter::Counter`;
 
@@ -25,7 +25,7 @@ const counterStore = `${accountObject.address}::counter::Counter`;
         arguments: []
     };
 
-    const txn_request = await client.generateTransaction(account.address(), payload);
+    const txn_request = await client.generateTransaction(account.address(), payload, { max_gas_amount: "2000" });
     const signed_txn = await client.signTransaction(account, txn_request);
     const res = await client.submitTransaction(signed_txn);
     await client.waitForTransaction(res["hash"]);
