@@ -3,7 +3,7 @@ name = "Counter"
 version = "0.0.0"
 
 [addresses]
-Counter = "9f53ba21527d32dd88e533946b085f9ab813d8ed40c13bbe2c667ea3a7e2b60f"
+Counter = "2780fe38b9e3a5a92cb56190aab75d4fa63a01d24c777810e2e4fb0a320deb9d"
 
 [dependencies]
 AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "devnet" }

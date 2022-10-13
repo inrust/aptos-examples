@@ -1,7 +1,7 @@
 //! This contract implements simple counter backed by storage on blockchain.
 //!
-//! The contract provides methods to [increment] / [decrement] counter and
-//! get it's current value [get_num] or [reset].
+//! The contract provides methods to [increment] counter and
+//! get it's current value [get_count] or [reset].
 module Counter::counter {
     use std::signer;
 
