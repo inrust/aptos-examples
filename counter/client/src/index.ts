@@ -1,11 +1,11 @@
 import { AptosClient, AptosAccount, AptosAccountObject } from "aptos";
 
-const NODE_URL = process.env.APTOS_NODE_URL || "https://fullnode.devnet.aptoslabs.com";
+const NODE_URL = process.env.APTOS_NODE_URL || "https://fullnode.testnet.aptoslabs.com";
 
 const accountObject: AptosAccountObject = {
-    address: "0x2780fe38b9e3a5a92cb56190aab75d4fa63a01d24c777810e2e4fb0a320deb9d",
-    privateKeyHex: "0xaa1507a6e87e39d558b1f3fb9359585e6aa9cadcbe8a2cb71dfa91f6809880ff",
-    publicKeyHex: "0xf515928a64f2f9149597c55c4557f1f3c56a36560811bd515375bb8713ebcc92",
+    address: "0x5dfe0e93eed9c2b1bb6bce2c2d2eda1345cbb222a4b5ab4fde6aa35d6540db21",
+    privateKeyHex: "0xdd8789da35d3769c17be943f5426b2cb9e7bd889b91cdd64dd12e72c7f2de7a7",
+    publicKeyHex: "0xaeb063fcbfb7aca97749d97616951aedfc7bae33855ea7dfd707b23c43c9fc98",
 };
 const counterStore = `${accountObject.address}::counter::Counter`;
 
