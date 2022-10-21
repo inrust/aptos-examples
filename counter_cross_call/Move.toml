@@ -3,8 +3,8 @@ name = "CounterCrossCall"
 version = "0.0.0"
 
 [addresses]
-CounterCrossCall = "43239e71ccc047ea2d3752eba79279cf9d091ecb6a04d8cf5103e1e9ae847958"
-Counter = "9f53ba21527d32dd88e533946b085f9ab813d8ed40c13bbe2c667ea3a7e2b60f"
+CounterCrossCall = "45538d67a76e355d0cd0588631b80f81819dc5daa770f82917030cea98a2b76d"
+Counter = "5dfe0e93eed9c2b1bb6bce2c2d2eda1345cbb222a4b5ab4fde6aa35d6540db21"
 
 [dependencies]
 AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "devnet" }
